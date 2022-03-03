@@ -1,0 +1,64 @@
+.profile__container__main {
+	width: 100vw;
+	padding: 50px 0;
+	display: grid;
+	grid-template-columns: 35% 35%;
+	grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+	justify-content: center;
+	grid-auto-flow: dense;
+}
+
+.info__panel {
+	margin: 0 20px;
+	padding: 15px 0;
+	grid-row: span 3;
+}
+
+.update__profile {
+	margin: 0 20px;
+	padding: 15px 0;
+	grid-row: span 5;
+}
+
+.change__password {
+	margin: 0 20px;
+	padding: 15px 0;
+	grid-row: span 3;
+}
+
+.update__courses {
+	margin: 0 20px;
+	padding: 15px 0;
+	grid-row: span 4;
+}
+
+@media screen and (max-width: 1600px) {
+	.profile__container__main {
+		grid-template-columns: 45% 45%;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.profile__container__main {
+		display: block;
+	}
+	.info__panel {
+		margin: 0 auto;
+		width: 95%;
+	}
+	.update__profile {
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.change__password {
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.update__courses {
+		margin: 0 auto;
+		width: 95%;
+		padding: 0;
+	}
+}

@@ -1,0 +1,26 @@
+@use '../../scss/mixins' as mix;
+
+.update__courses__container {
+	@include mix.form_container;
+	width: 100%;
+	padding: 25px 45px;
+}
+
+.add__course__form {
+	@include mix.form_element;
+	label {
+		margin-bottom: 15px;
+	}
+
+	select {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 25px;
+		border: 0.5px solid rgba(0, 0, 0, 0.4);
+		border-radius: 10px;
+		padding: 0 10px;
+		height: 40px;
+		font-size: 16px;
+		text-align: center;
+	}
+}

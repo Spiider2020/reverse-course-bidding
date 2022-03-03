@@ -1,0 +1,50 @@
+.profile__info__container {
+	min-width: 400px;
+	width: 100%;
+	padding: 20px 45px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	h2 {
+		margin-bottom: 25px;
+	}
+}
+
+.profile__info__row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.profile__info__block {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	span {
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	div {
+		padding-left: 25px;
+		overflow-wrap: break-word;
+	}
+}
+
+.profile_taught_courses {
+	width: 100%;
+	h3 {
+		margin: 25px 0;
+	}
+	.profile__course__row {
+		display: flex;
+		justify-content: space-between;
+		padding: 5px 5px;
+	}
+	.grey__row {
+		background-color: rgba(211, 211, 211, 0.5);
+	}
+
+	.title__row {
+		border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+		margin-bottom: 10px;
+	}
+}

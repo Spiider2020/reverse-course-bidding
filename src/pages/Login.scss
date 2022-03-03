@@ -1,0 +1,63 @@
+@use '../scss/mixins' as mix;
+
+.container__main {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__login__form {
+	@include mix.form_container;
+	width: 400px;
+	padding: 5px 20px;
+}
+
+.login__form {
+	@include mix.form_element;
+}
+
+.login__accounts__container {
+	@include mix.form_container;
+	width: 70%;
+	margin-top: 30px;
+	padding: 25px 20px;
+	h2 {
+		margin-top: 0;
+	}
+}
+
+.login__accounts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.login__accounts ul {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	list-style: none;
+
+	.main__li {
+		text-align: left;
+	}
+
+	.secondary__li {
+		text-align: left;
+	}
+}
+
+.login__user {
+	width: 250px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgb(195, 195, 195);
+	cursor: pointer;
+	display: block;
+	&:hover {
+		background-color: rgb(102, 163, 255);
+	}
+}

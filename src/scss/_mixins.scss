@@ -1,0 +1,87 @@
+@mixin form_container {
+	min-width: 400px;
+	width: 400px;
+	padding: 5px 0;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	h2 {
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	p {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.error__text {
+		margin-bottom: 10px;
+		color: rgba(255, 0, 0, 0.75);
+	}
+	.confirmation__text {
+		margin-bottom: 10px;
+		color: rgba(4, 206, 4, 0.75);
+	}
+
+	.form__link {
+		display: inline-block;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 30px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+@mixin form_element {
+	display: flex;
+	flex-direction: column;
+	label {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+	.input__field {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 25px;
+		border: 0.5px solid rgba(0, 0, 0, 0.4);
+		border-radius: 10px;
+		padding: 0 10px;
+		height: 40px;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.radio__buttons {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		label {
+			display: flex;
+			justify-content: center;
+			input {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.input__button {
+		background-color: rgb(102, 163, 255);
+		font-size: 16px;
+		height: 40px;
+		width: 200px;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		border-radius: 10px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+		&:hover {
+			background-color: rgb(125, 177, 255);
+			cursor: pointer;
+		}
+	}
+}

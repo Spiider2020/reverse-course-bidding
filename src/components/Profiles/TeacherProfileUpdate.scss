@@ -1,0 +1,21 @@
+@use '../../scss/mixins' as mix;
+
+.teacher__update__container {
+	@include mix.form_container;
+	width: 100%;
+	padding: 25px 45px;
+}
+
+.update__teacher__form {
+	@include mix.form_element;
+	.input__textarea {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 25px;
+		padding: 10px 10px;
+		border-radius: 10px;
+		border: 0.5px solid rgba(0, 0, 0, 0.4);
+		font-size: 16px;
+		resize: none;
+	}
+}

@@ -1,0 +1,119 @@
+.bookings__container {
+	width: 100%;
+	padding: 0 0 25px 0;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.bookings__titlebar {
+	height: 40px;
+	display: flex;
+	padding: 0 20px;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bookings__list {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.no__courses {
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.booking__card {
+	width: 100%;
+	margin: 15px auto;
+	padding: 15px 25px;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+	h3 {
+		height: 60px;
+		padding-top: 15px;
+		text-align: center;
+	}
+	.booking__description {
+		width: 95%;
+		margin: 10px auto;
+		margin-bottom: 30px;
+	}
+	.info__block__container {
+		width: 95%;
+		margin: 15px auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		text-align: center;
+		.info__block {
+			width: 150px;
+			min-width: 150px;
+			min-height: 100px;
+			margin: 10px 15px;
+			background-color: rgba(128, 128, 128, 0.5);
+			border-radius: 5px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.info__block__price {
+				p {
+					width: auto;
+				}
+				width: 90%;
+				display: flex;
+				justify-content: space-between;
+			}
+			.price__profit__separator {
+				width: 90%;
+				height: 1px;
+				margin: 3px auto;
+				background-color: black;
+			}
+			hr {
+				background-color: black;
+				height: 1px;
+			}
+			h4 {
+				width: 100%;
+				margin: 5px auto;
+			}
+			p {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.deleted__warning {
+	padding: 10px 0;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap: 10px;
+	color: red;
+}
+
+@media screen and (max-width: 600px) {
+	.bookings__list {
+		width: 100%;
+	}
+	.booking__card {
+		padding: 15px 10px;
+		margin: 10 auto;
+		.info__block__container {
+			width: 100%;
+			margin: 0 auto;
+			.info__block {
+				width: 135px;
+				min-width: 135px;
+				min-height: 100px;
+				margin: 10px 5px;
+			}
+		}
+	}
+}

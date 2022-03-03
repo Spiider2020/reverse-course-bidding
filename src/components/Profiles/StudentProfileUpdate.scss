@@ -1,0 +1,11 @@
+@use '../../scss/mixins' as mix;
+
+.student__update__container {
+	@include mix.form_container;
+	width: 100%;
+	padding: 25px 45px;
+}
+
+.update__student__form {
+	@include mix.form_element;
+}
